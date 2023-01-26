@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calc.js" defer></script>
+    <title>Calculator</title>
+</head>
+    <body>
+        <div id="calculator">
+            <div id="result" class="calc-object result">
+                <p>0</p>
+            </div>
+            <div class="calc-row">
+                <button class="calc-object calc-button operator" onclick="add('(')">(</button>
+                <button class="calc-object calc-button operator" onclick="add(')')">)</button>
+                <button class="calc-object calc-button operator" onclick="updateResult('not implemented')">%</button>
+                <button class="calc-object calc-button operator" onclick="reset()">AC</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-object calc-button" onclick="add('7')">7</button>
+                <button class="calc-object calc-button" onclick="add('8')">8</button>
+                <button class="calc-object calc-button" onclick="add('9')">9</button>
+                <button class="calc-object calc-button operator" onclick="add('/')">÷</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-object calc-button" onclick="add('4')">4</button>
+                <button class="calc-object calc-button" onclick="add('5')">5</button>
+                <button class="calc-object calc-button" onclick="add('6')">6</button>
+                <button class="calc-object calc-button operator" onclick="add('*')">x</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-object calc-button" onclick="add('1')">1</button>
+                <button class="calc-object calc-button" onclick="add('2')">2</button>
+                <button class="calc-object calc-button" onclick="add('3')">3</button>
+                <button class="calc-object calc-button operator" onclick="add('-')">-</button>
+            </div>
+            <div class="calc-row">
+            <button class="calc-object calc-button" onclick="add('0')">0</button>
+            <button class="calc-object calc-button" onclick="add('.')">.</button>
+            <button class="calc-object calc-button" onclick="processOperation()">=</button>
+            <button class="calc-object calc-button operator" onclick="add('+')">+</button>
+            </div>
+        </div>
+    </body>
+</html>
